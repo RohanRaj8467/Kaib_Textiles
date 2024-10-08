@@ -536,4 +536,85 @@ img {
 .footer-container .social-links{
     margin-bottom: 5%;
 }
+/* General styling */
+.skill {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.skill h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.skillcont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-container-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adds space between images */
+  margin-bottom: 20px;
+}
+
+.img-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img {
+  max-width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional styling */
+}
+
+/* Responsive styling for mobile */
+@media screen and (max-width: 768px) {
+  .img-cont {
+    width: 100%; /* Each image container takes full width */
+    margin-bottom: 10px;
+  }
+
+  .img {
+    width: 100%; /* Images scale to fit their containers */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* For larger devices like desktop */
+@media screen and (min-width: 769px) {
+  .responsive-container-block {
+    max-width: 1200px; /* Adjust based on desired layout width */
+    margin: 0 auto; /* Center the content */
+  }
+
+  .img-cont {
+    flex: 1 1 calc(33.33% - 20px); /* 3 images per row, space between */
+    margin-bottom: 10px;
+  }
+
+  .img-big {
+    flex: 1 1 calc(50% - 20px); /* Larger images, 2 per row */
+  }
+
+  .img-last {
+    margin-bottom: 0;
+  }
+}
+
 
