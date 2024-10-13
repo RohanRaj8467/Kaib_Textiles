@@ -631,4 +631,13 @@ img {
       margin-bottom: 0;
     }
   }
+  .about-body {
+    width: 100%;  /* Make sure the container uses full width */
+    padding: 20px;  /* Add padding for spacing */
+    box-sizing: border-box;  /* Ensures padding is included in width */
+    overflow: hidden;  /* Prevents overflow */
+    text-align: justify;  /* Improves text alignment */
+    word-wrap: break-word;  /* Breaks long words if necessary */
+  }
+  
   
