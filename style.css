@@ -525,24 +525,117 @@ img {
     max-width: 100%;
     margin: 0 auto;
 }
+/* Resetting default browser margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Styling for the body background */
 .body {
-    background-image: url(images/kaib_croped1.jpg);
+    background-image: url('images/kaib_croped1.jpg');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;  /* Ensures the background image covers the entire element */
-    background-position: center;  /* Centers the background image */
-    height: 100vh;  /* Ensures the height covers the viewport */
+    height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    text-align: center;
+    padding: 20px; /* Add padding to prevent overflow */
 }
+
+/* Styling for the container */
 .container {
     max-width: 90%; /* Container will take 90% of the screen width */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+h1, h2, p {
+    font-weight: bolder;
+    color: #000000;
+    margin: 0 0 10px;
+}
+
+/* Styling for the span in h2 */
+h2 span {
+    color: rgb(252, 80, 255);
+}
+
+/* Styling for the span in p */
+p span {
+    color: rgb(234, 182, 14);
+}
+
+/* Styling for the "About Me" button */
+button.about {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5c93;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+button.about:hover {
+    background-color: #ff4180;
+}
+
+/* Styling for social icons */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+/* Adjusting the size of social media icons */
+ul li a img {
+    width: 48px;
+    height: 48px;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Make container take full width */
+    }
+
+    h1, h2, p {
+        font-size: 1.2rem; /* Reduce font size for mobile screens */
+    }
+
+    button.about {
+        padding: 8px 16px;
+        font-size: 0.9rem; /* Slightly smaller button for mobile */
+    }
+
+    ul li {
+        margin: 0 5px; /* Less margin between icons */
+    }
+
+    ul li a img {
+        width: 36px; /* Smaller icons for mobile */
+        height: 36px;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 50%; /* Limit container width on larger screens */
+    }
+}
+
 
 
 
