@@ -526,25 +526,12 @@ img {
     margin: 0 auto;
 }
 .body {
-    background-image: url("images/kaib2nd.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;  /* Ensures the background image covers the entire element */
     background-position: center;  /* Centers the background image */
     height: 100vh;  /* Ensures the height covers the viewport */
     width: 100%;
-}
-.img {
-    width: 100%; /* Ensures the container spans the full width */
-    max-width: 100%; /* Prevents the container from expanding beyond its parent */
-    overflow: hidden; /* Hides any potential overflow from the image */
-    text-align: center; /* Center the image if smaller than the container */
-}
-
-.img img {
-    max-width: 100%; /* Ensures the image never exceeds the container's width */
-    height: auto; /* Maintains aspect ratio */
-    display: inline-block; /* Centers the image inside the container */
 }
 
 
