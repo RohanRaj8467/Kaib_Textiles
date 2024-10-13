@@ -526,12 +526,22 @@ img {
     margin: 0 auto;
 }
 .body {
+    background-image: url(images/kaib_croped1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;  /* Ensures the background image covers the entire element */
     background-position: center;  /* Centers the background image */
     height: 100vh;  /* Ensures the height covers the viewport */
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    max-width: 90%; /* Container will take 90% of the screen width */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -631,13 +641,6 @@ img {
       margin-bottom: 0;
     }
   }
-  .about-body {
-    width: 100%;  /* Make sure the container uses full width */
-    padding: 20px;  /* Add padding for spacing */
-    box-sizing: border-box;  /* Ensures padding is included in width */
-    overflow: hidden;  /* Prevents overflow */
-    text-align: justify;  /* Improves text alignment */
-    word-wrap: break-word;  /* Breaks long words if necessary */
-  }
+
   
   
